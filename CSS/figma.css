@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html {
+    padding: 20px 5px 30px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+/* Making of the Fixed Navbar */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0px;
+    padding: 10px 60px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar img {
+    width: 100px;
+    height: 100px;
+
+}
+
+.navbar ul {
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 30px 5px;
+    color: grey;
+}
+
+.navbar ul li a {
+    color: white;
+    font-size: 20px;
+    background-color: #4587F4;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* HeroMenu */
+.HeroMenu {
+    font-size: 4em;
+    font-weight: 400;
+    text-align: center;
+    padding: 100px;
+    margin-top: 50px;
+    background-color: #fbfbfb;
+}
+
+.HeroMenu span:first-of-type {
+    color: blue
+}
+
+.HeroMenu span:nth-of-type(2) {
+    color: red;
+}
+
+.HeroMenu span:nth-of-type(3) {
+    color: green;
+}
+
+
+.bubbles {
+    position: absolute;
+    top: 0px;
+    right: 1600px;
+}
+
+/* .bubbles span{
+
+    object-fit: cover;
+    background-position: center;
+    background-size: cover, contain;
+    color: white;
+} */
+
+.bubbles img:nth-of-type(5) {
+    position: absolute;
+    top: 270px;
+    left: 310px;
+    height: 70.34px;
+    width: 70.34px;
+}
+
+.bubbles img:nth-of-type(3) {
+    position: absolute;
+    /* bottom: 7em;
+    right: 6em; */
+    top: 370px;
+    left: 290px;
+    animation-name: bubblegr;
+    animation-duration: 5s;
+    animation-delay: -3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+.bubbles img:last-of-type {
+    position: absolute;
+    top: 530px;
+    left: 310px;
+    width: 91.44px;
+    height: 91.44x;
+}
+
+.bubbles img:nth-last-of-type(2) {
+    position: absolute;
+    top: 380px;
+    left: 210px;
+    width: 73.86px;
+    height: 73.86px;
+}
+
+
+.bubbles img:nth-of-type(9) {
+    position: absolute;
+    top: 310px;
+    left: 430px;
+    width: 88px;
+    height: 87px;
+}
+
+.bubbles img:nth-of-type(4) {
+    position: absolute;
+    top: 540px;
+    left: 430px;
+    animation-name: bubbler;
+    animation-duration: 5s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+
+.bubbles img:nth-of-type(6) {
+    position: absolute;
+    top: 310px;
+    left: 520px;
+    width: 246.19px;
+    height: 246.19px;
+}
+
+.bubbles img:nth-of-type(1) {
+    position: absolute;
+    top: 270px;
+    left: 770px;
+    animation-name: bubbley;
+    animation-duration: 5s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+.bubbles img:nth-of-type(8) {
+    position: absolute;
+    top: 470px;
+    left: 800px;
+    width: 124.85px;
+    height: 124.85px;
+}
+
+.bubbles img:nth-of-type(7) {
+    position: absolute;
+    top: 350px;
+    left: 910px;
+    animation-name: bubblegr;
+    animation-duration: 5s;
+    animation-delay: -3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+.bubbles img:nth-of-type(2) {
+    position: absolute;
+    top: 270px;
+    left: 890px;
+    width: 70.34px;
+    height: 70.34px;
+}
+
+/* Code for the animation of the bubbles */
+@keyframes bubbley {
+    0% {
+        width: 74.44px;
+        height: 74.44px;
+    }
+
+    50% {
+        width: 100px;
+        height: 100px;
+    }
+
+    100% {
+        width: 74.44px;
+        height: 74.44px;
+    }
+}
+
+@keyframes bubbleg {
+    0% {
+        width: 117.9px;
+        height: 117.9;
+    }
+
+    50% {
+        width: 127px;
+        height: 127px;
+    }
+
+    100% {
+        width: 117.9px;
+        height: 117.9px;
+    }
+}
+
+@keyframes bubblegr {
+    0% {
+        width: 137.16px;
+        height: 137.16px;
+    }
+
+    50% {
+        width: 110px;
+        height: 110px;
+    }
+
+    100% {
+        width: 137.16px;
+        height: 137.16px;
+    }
+}
+
+@keyframes bubbler {
+    0% {
+        width: 124.85px;
+        height: 124.85px;
+    }
+
+    50% {
+        width: 100px;
+        height: 100px;
+    }
+
+    100% {
+        width: 124.85px;
+        height: 124.85px;
+    }
+}
+
+/* Making of the Body */
+header {
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: gray;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+/* Body Continues--the sections that have grid layout */
+Section {
+    text-align: center;
+}
+
+/* Section a span{
+    display: none;
+}
+
+Section a:link:hover~Section a span{
+    display: block;
+    /* transform: translateX(5px); */
+
+.profile {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile i {
+    color: green;
+}
+
+.round i {
+    color: blue;
+}
+
+.profilecontent {
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+.round img {
+    border-radius: 100%;
+}
+
+.comproj ul li:hover {
+    text-decoration: underline;
+    text-decoration-color: #4587F4;
+}
+
+/* Community Project Section */
+.comproj ul {
+    display: flex;
+    color: gray;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.comproj ul li {
+    padding: 10px;
+    list-style: none;
+}
+
+
+.CommunityDIV {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Community {
+    padding: 60px 10px;
+    text-align: justify;
+}
+
+.footer {
+    display: flex;
+    color: blue;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.footer img {
+    width: 100px;
+    height: 100px;
+}
